@@ -23,7 +23,7 @@ public class MainActivity extends FragmentActivity {
 
         Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.andre);
         fragment.addClickableArea(bm, 121, 1453, 439, 171, "http://www.google.com");
-        fragment.addVideoView(bm, 203, 689, 1280, 756);
+        fragment.addVideoView(bm, 203, 689, 1280, 756, "http://huripadws.hurriyet.com.tr/galeri/Video/2014/6/47E6B0BC-3000-485B-A6E1.mp4");
 
         displayFragment(fragment);
     }

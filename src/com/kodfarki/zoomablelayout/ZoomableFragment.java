@@ -65,8 +65,9 @@ public class ZoomableFragment extends Fragment {
      * @param top
      * @param width
      * @param height
+     * @param videoUrl
      */
-    public void addVideoView(Bitmap bm, int left, int top, int width, int height) {
+    public void addVideoView(Bitmap bm, int left, int top, int width, int height, String videoUrl) {
        //TODO not implemented
     }
 }
