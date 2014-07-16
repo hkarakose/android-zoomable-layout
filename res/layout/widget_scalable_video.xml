@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/bgImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/andre" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+
+    <Button
+        android:id="@+id/playButtonView"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/videoView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/halil_button" />
+
+    <MediaController
+        android:id="@+id/mediaControllerView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/playButtonView" >
+    </MediaController>
+
+</RelativeLayout>

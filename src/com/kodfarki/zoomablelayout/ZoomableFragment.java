@@ -18,10 +18,10 @@ import android.widget.RelativeLayout;
  * Time: 8:17 PM
  */
 public class ZoomableFragment extends Fragment {
-    private FragmentActivity parentActivity;
+    private MainActivity parentActivity;
 
-    public ZoomableFragment(FragmentActivity parentActivity) {
-        this.parentActivity = parentActivity;
+    public ZoomableFragment(MainActivity mainActivity) {
+        this.parentActivity = mainActivity;
     }
 
     @Override
@@ -35,7 +35,13 @@ public class ZoomableFragment extends Fragment {
         return layout;
     }
 
-    /**
+	// @Override
+	// public void onCreate(Bundle savedInstanceState) {
+	// // TODO Auto-generated method stub
+	// super.onCreate(savedInstanceState);
+	// }
+
+	/**
      *
      * @param bm required to learn original image width/height so that we can calculate left,top,width,height of the
      *           clickable region during zoom in/out.
@@ -47,14 +53,14 @@ public class ZoomableFragment extends Fragment {
      */
     public void addClickableArea(Bitmap bm, int left, int top, int width, int height, final String url) {
         //TODO not implemented
-        View view = null;
-
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity) parentActivity).displayFragment(new WebViewFragment(url));
-            }
-        });
+//        View view = null;
+//
+//        view.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ((MainActivity) parentActivity).displayFragment(new WebViewFragment(url));
+//            }
+//        });
     }
 
     /**
